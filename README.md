@@ -1,7 +1,6 @@
-
+# đường link jira: https://lamhuetrung.atlassian.net/jira/software/projects/KAN/boards/1/backlog
+# Mô tả về dự án sẽ thực hiện trong bài báo cáo này:
 <pre>
-  ## đường link jira: https://lamhuetrung.atlassian.net/jira/software/projects/KAN/boards/1/backlog
-  ## Mô tả về dự án sẽ thực hiện trong bài báo cáo này:
     FRONT-END <br>
     ## MÔ TẢ: sửa dụng React.js để thiết kế giáo diện, axios để lấy dữ liệu từ monggoDB bằng Node.js và Express
     - ĐĂNG NHẬP/ ĐĂNG KÝ <br>
