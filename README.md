@@ -1,5 +1,10 @@
-#### đường link jira: https://lamhuetrung.atlassian.net/jira/software/projects/KAN/boards/1/backlog
-# Mô tả về dự án sẽ thực hiện trong bài báo cáo này:
+# BÁO CÁO MÔN HỌC - CÔNG NGHỆ PHẦN MỀM - GVHD: TS.NGUYỄN BẢO ÂN
+### Thành viên nhóm 1:
+Lâm Huệ Trung - 110121255 - Leader (Scrum Master)
+Mã Đại Phú - 110121266 - Member (Product Owner) 
+Nguyễn Hoàng Nhựt - 110121255 - Member (QA)
+#### Phân công công việc cho từng thành viên: https://lamhuetrung.atlassian.net/jira/software/projects/KAN/boards/1/backlog
+#### Mô tả về dự án sẽ thực hiện trong bài báo cáo này:
 <pre>
     FRONT-END <br>
     ## MÔ TẢ: sửa dụng React.js để thiết kế giáo diện, axios để lấy dữ liệu từ monggoDB bằng Node.js và Express
@@ -26,3 +31,5 @@
     - Lấy danh sách giáo viên, thêm thông tin giáo viên, thêm báo cáo & danh sách tin tức.<br>
     - Lấy danh sách công ty, cán bộ hướng dẫn, thêm công ty & cán bộ, thêm thông báo và tin tức.<br>
     - Lấy danh sách đợt thực tập & thêm đợt thực tập, danh sách công việc và thêm công việc, import công việc bằng file excel.<br>
+
+<pre>
