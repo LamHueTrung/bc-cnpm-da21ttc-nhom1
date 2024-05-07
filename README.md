@@ -8,4 +8,4 @@ Nguyễn Hoàng Nhựt - 110121255 - Member<br>
 # Công việc: <br>
   <pre>
    - Hoàn thành code xây dựng API xác thực người dùng <br>
-
+   - Hoàn thành code Xây dựng API lấy danh sách tin tức <br>
