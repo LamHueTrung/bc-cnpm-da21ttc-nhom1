@@ -10,9 +10,24 @@ import Login from '../src/pages/Login';
 import Index from '../src/pages/home';
 import XulyLogin from '../src/pages/xulylogin';
 
+import Tintuc from '../src/pages/Student/tintuc';
+import TintucAD from '../src/pages/Admin/tintuc';
+import TintucGV from '../src/pages/Teacher/tintuc';
+
 
 const router = createBrowserRouter([
-    
+    {
+        path: '/student/tintuc/:slug',
+        element: <Tintuc />,
+    },
+    {
+        path: '/admin/tintuc/:slug',
+        element: <TintucAD />,
+    },
+    {
+        path: '/teacher/tintuc/:slug',
+        element: <TintucGV />,
+    },
     {
         path: '/admin',
         element: <Login />,
