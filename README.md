@@ -7,9 +7,7 @@ Nguyễn Hoàng Nhựt - 110121255 - Member<br>
 #### Mô tả về dự án sẽ thực hiện trong bài báo cáo này:
 # HỆ THỐNG QUẢN LÝ SINH VIÊN THỰC TẬP CỦA BỘ MÔN CÔNG NGHỆ THÔNG TIN <br>
   <pre>
-    Thiết kế giao diện chọn quyền đăng nhập bằng figma - Hoàn thành <br>
-    Thiết kế giao diện đăng nhập bằng figma - Hoàn thành <br>
-    Thiết kế giao diện đăng ký bằng figma - Hoàn thành <br>
-    Thiết kế giao diện trang tin tức bằng figma - Hoàn thành <br>
-    Hoàn thành code giao diện đăng nhập/đăng ký
+    Thiết kế Giao diện đơn thực tập của Giáo viên - Hoàn thành <br>
+    Thiết kế giao danh sách thực tập cho giáo viên - Hoàn thành <br>
+    Hoàn thành code giao diện danh sách thực tập cho giáo viên
   </pre>
