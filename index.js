@@ -7,11 +7,8 @@ const multer = require('multer');
 const fastcsv = require('fast-csv');
 
 const SinhVienRoutes = require('./routes/SinhVienRoutes');
-const CongTyRoutes = require('./routes/CongTyRoutes');
 const GiaoVienRoutes = require('./routes/GiaoVienRoutes');
 const TaikhoanRoutes = require('./routes/DangKyRoutes');
-const AdminRoutes = require('./routes/AdminRoutes');
-const Data = require('./models/ThongTinCongBo');
 
 const app = express();
 const port = 3001;
@@ -22,7 +19,6 @@ app.use(express.json());
 
 // kết nối db
 db.connect();
-
 
 //routes
 app.use('/taikhoan', TaikhoanRoutes);
