@@ -9,5 +9,7 @@ Nguyễn Hoàng Nhựt - 110121255 - Member<br>
   <pre>
     Thiết kế Giao diện đơn thực tập của Giáo viên - Hoàn thành <br>
     Thiết kế giao danh sách thực tập cho giáo viên - Hoàn thành <br>
-    Hoàn thành code giao diện danh sách thực tập cho giáo viên
+    Hoàn thành code giao diện danh sách thực tập cho giáo viên <br>
+    Thiết kế Giao diện đăng kí thực tập cho sinh viên - Hoàn thành <br>
+    Hoàn thành code giao diện đăng kí thực tập cho sinh viên
   </pre>
