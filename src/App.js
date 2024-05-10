@@ -15,8 +15,6 @@ import TintucAD from '../src/pages/Admin/tintuc';
 import TintucGV from '../src/pages/Teacher/tintuc';
 
 import DonThuctap from '../src/pages/Student/dondangky';
-import DonThucTapGV from '../src/pages/Teacher/quanlythuctap';
-import ThongTinGV from '../src/pages/Teacher/dangkythongtin';
 
 const router = createBrowserRouter([
     {
@@ -30,14 +28,6 @@ const router = createBrowserRouter([
     {
         path: '/admin/tintuc/:slug',
         element: <TintucAD />,
-    },
-    {
-        path: '/teacher/quanlythuctap/:slug',
-        element: <DonThucTapGV />,
-    },
-    {
-        path: '/teacher/thongtin/:slug',
-        element: <ThongTinGV />,
     },
     {
         path: '/teacher/tintuc/:slug',
