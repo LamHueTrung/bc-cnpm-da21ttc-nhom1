@@ -17,6 +17,24 @@ class ThuctapController {
                 res.status(500).json({ error: err });
             });
     }
+    static DuyetDonThucTap = async (req, res) => {
+        try {
+            const { ThucTapID } = req.params;
+            const updatedData = req.body; // Dữ liệu cần cập nhật
+
+            const thuctap = await Thuctap.findByIdAndUpdate(
+                ThucTapID,
+                updatedData,
+                {
+                    new: true,
+                },
+            );
+
+            res.json(thuctap);
+        } catch (error) {
+            res.status(500).json({ error: 'Lỗi cập nhật thông tin sinh viên' });
+        }
+    };
 }
 
 module.exports = ThuctapController;
