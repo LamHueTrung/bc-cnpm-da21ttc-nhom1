@@ -15,8 +15,17 @@ import TintucAD from '../src/pages/Admin/tintuc';
 import TintucGV from '../src/pages/Teacher/tintuc';
 
 import DonThuctap from '../src/pages/Student/dondangky';
+import DonThucTapGV from '../src/pages/Teacher/quanlythuctap';
+import ThongTinDangKyGV from '../src/pages/Teacher/thongtindangky';
+import ThongTinGV from '../src/pages/Teacher/dangkythongtin';
+
+import Thuctap from '../src/pages/Student/thuctap';
 
 const router = createBrowserRouter([
+    {
+        path: '/student/thuctap/:slug',
+        element: <Thuctap />,
+    },
     {
         path: '/student/dondangky/:slug',
         element: <DonThuctap />,
@@ -28,6 +37,22 @@ const router = createBrowserRouter([
     {
         path: '/admin/tintuc/:slug',
         element: <TintucAD />,
+    },
+    {
+        path: '/teacher/quanlythuctap/:slug',
+        element: <DonThucTapGV />,
+    },
+    {
+        path: '/teacher/quanlythuctap/thongtindangky/:slug',
+        element: <ThongTinDangKyGV />,
+    },
+    {
+        path: '/teacher/quanlythuctap/xembaocao/:slug',
+        element: <XemBaoCao />,
+    },
+    {
+        path: '/teacher/thongtin/:slug',
+        element: <ThongTinGV />,
     },
     {
         path: '/teacher/tintuc/:slug',
