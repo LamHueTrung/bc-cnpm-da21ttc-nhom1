@@ -11,6 +11,10 @@ Nguyễn Hoàng Nhựt - 110121255 - Member<br>
     Thiết kế giao diện đăng nhập bằng figma - Hoàn thành <br>
     Thiết kế giao diện đăng ký bằng figma - Hoàn thành <br>
     Thiết kế giao diện trang tin tức bằng figma - Hoàn thành <br>
-    Hoàn thành code giao diện đăng nhập/đăng ký
-    Hoàn thành code trang tin tức 
+    Hoàn thành code giao diện đăng nhập/đăng ký <br>
+    Hoàn thành code trang tin tức <br>
+    Thiết kế giao diện danh sách sinh viên bằng figma - Hoàn thành <br>
+    Thiết kế giao diện danh sách giáo viên bằng figma - Hoàn thành <br>
+    Thiết kế giao diện danh sách đợt thực tập bằng figma - Hoàn thành <br>
+    Thiết kế giao diện thêm đợt thực tập bằng figma - Hoàn thành <br>
   </pre>
