@@ -17,4 +17,5 @@ Nguyễn Hoàng Nhựt - 110121255 - Member<br>
     Thiết kế giao diện danh sách giáo viên bằng figma - Hoàn thành <br>
     Thiết kế giao diện danh sách đợt thực tập bằng figma - Hoàn thành <br>
     Thiết kế giao diện thêm đợt thực tập bằng figma - Hoàn thành <br>
+    Hoàn thành code tạo giao diện Tin tức, Sinh viên, Giáo viên, Đợt thực tập và Thêm đợt thực tập cho Admin <br>
   </pre>
