@@ -7,8 +7,11 @@ const multer = require('multer');
 const fastcsv = require('fast-csv');
 
 const SinhVienRoutes = require('./routes/SinhVienRoutes');
+const CongTyRoutes = require('./routes/CongTyRoutes');
 const GiaoVienRoutes = require('./routes/GiaoVienRoutes');
 const TaikhoanRoutes = require('./routes/DangKyRoutes');
+const AdminRoutes = require('./routes/AdminRoutes');
+const Data = require('./models/ThongTinCongBo');
 
 const app = express();
 const port = 3001;
@@ -19,6 +22,7 @@ app.use(express.json());
 
 // kết nối db
 db.connect();
+
 //them file bao cao
 app.use('/uploads', express.static('uploads'));
 const storage = multer.diskStorage({
@@ -85,10 +89,82 @@ app.get('/api/files/:filename', async (req, res) => {
     }
 });
 
+// Định nghĩa tuyến đường để xử lý tệp tin Excel
+app.post(
+    '/api/themcongviec/:iddotthuctap',
+    upload.single('file'),
+    async (req, res) => {
+        const file = req.file;
+        const iddotthuctap = req.params.iddotthuctap;
+        try {
+            if (!file) {
+                return res.status(400).json({ message: 'No file uploaded.' });
+            }
+
+            const stream = fs.createReadStream(file.path);
+            const data = [];
+
+            const csvStream = fastcsv
+                .parse({ headers: true })
+                .on('data', (row) => {
+                    try {
+                        // Kiểm tra số lượng cột trong mỗi dòng
+                        const columnCount = Object.keys(row).length;
+                        const headerString = Object.keys(row)[0];
+                        const headers = headerString.split(';');
+                        const dataString = Object.values(row)[0];
+                        const values = dataString.split(';');
+                        // Tạo đối tượng chứa dữ liệu
+                        const rowData = {
+                            macongty: values[0],
+                            madotthuctap: iddotthuctap,
+                            congviecthuctap: values[1],
+                            ghichu: values[2],
+                        };
+                        console.log(rowData);
+                        // headers.forEach((header, index) => {
+                        //   rowData[header] = values[index];
+                        // });
+                        data.push(rowData);
+                    } catch (err) {
+                        console.error('Error processing row:', err);
+                    }
+                })
+                .on('end', async () => {
+                    // // Xóa tệp CSV sau khi đọc xong
+                    // fs.unlinkSync(file.path);
+
+                    // Lưu dữ liệu vào MongoDB
+                    Data.create(data)
+                        .then((result) => {
+                            console.log(data);
+                            res.status(201).json(result);
+                        })
+                        .catch((err) => {
+                            res.status(500).json({ error: err });
+                        });
+                })
+                .on('error', (err) => {
+                    console.error('Stream error:', err);
+                    res.status(500).json({ message: 'Lỗi khi đọc tệp CSV!' });
+                });
+
+            stream.pipe(csvStream);
+        } catch (error) {
+            console.error(error);
+            res.status(500).json({
+                message: 'Upload và lưu vào MongoDB thất bại!',
+            });
+        }
+    },
+);
+
 //routes
 app.use('/taikhoan', TaikhoanRoutes);
 app.use('/student', SinhVienRoutes);
+app.use('/company', CongTyRoutes);
 app.use('/teacher', GiaoVienRoutes);
+app.use('/admin', AdminRoutes);
 
 app.listen(port, () => {
     console.log('API server is running on port 3001');
