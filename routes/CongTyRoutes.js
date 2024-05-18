@@ -11,7 +11,5 @@ router.get('/dangnhaptaikhoan', TaikhoanRoutes.layDanhSachTaikhoan);
 router.get('/donthuctap', ThuctapController.layDanhSachThuctap);
 
 router.post('/themthongbao', TintucController.themThongBao);
-router.post('/dangkythongtin', CongTyController.Dangkythongtin);
-router.put('/xoacongty/:CTID', CongTyController.xoacongty);
 
 module.exports = router;
