@@ -14,4 +14,5 @@ Nguyễn Hoàng Nhựt - 110121255 - Member<br>
    - Hoàn thành code xây dựng API thêm, lấy thông tin báo cáo sinh viên <br>
    - Hoàn thành code xây dựng API thêm, cập nhật thông tin đợt thực tập, công việc thực tập cho Admin <br> 
    - Hoàn thành code Xây dựng API thêm, cập nhật thông tin công ty<br>
-   - Hoàn thành code xây dựng API thêm, cập nhật thông tin cán bộ hướng dẫn
+   - Hoàn thành code xây dựng API thêm, cập nhật thông tin cán bộ hướng dẫn <br>
+   - Hoàn thành code xây dựng API lấy danh sách công ty
