@@ -30,7 +30,28 @@ import QuanLyDotThucTap from './pages/Admin/quanlydotthuctap';
 import ThemDotThucTap from './pages/Admin/themdulieuthuctap';
 import SuaDotThucTap from './pages/Admin/thaydoidulieuthuctap';
 
+import ThemCongTy from './pages/Admin/themcongty';
+import Thongtindangky from '../src/pages/Admin/thongtindangky';
+import Quanlythuctap from '../src/pages/Admin/quanlythuctap';
+import Congty from '../src/pages/Admin/congty';
+
 const router = createBrowserRouter([
+    {
+        path: '/admin/quanlythuctap/:slug',
+        element: <Quanlythuctap />,
+    },
+    {
+        path: '/admin/themcongty/:slug',
+        element: <ThemCongTy />,
+    },
+    {
+        path: '/admin/congty/:slug',
+        element: <Congty />,
+    },
+    {
+        path: '/admin/quanlythuctap/thongtindangky/:slug',
+        element: <Thongtindangky />,
+    },
     {
         path: '/admin/quanlydotthuctap/:slug',
         element: <DotThucTap />,
