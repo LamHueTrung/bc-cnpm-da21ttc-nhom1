@@ -69,6 +69,21 @@ class SinhVienController {
             res.status(500).json({ error: 'Lỗi cập nhật thông tin sinh viên' });
         }
     };
+    static layBaoCao(req, res) {
+        BaoCao.find()
+            .then((baocao) => res.json(baocao))
+            .catch((err) => res.json('Lỗi /student: ' + err));
+    }
+    static BaoCao(req, res) {
+        const newData = req.body;
+        BaoCao.create(newData)
+            .then((result) => {
+                res.status(201).json(result);
+            })
+            .catch((err) => {
+                res.status(500).json({ error: err });
+            });
+    }
     static xoadonthuctap = async (req, res) => {
         try {
             const { DTTID } = req.params;
@@ -86,21 +101,6 @@ class SinhVienController {
             res.status(500).json({ error: 'Lỗi xoá đơn thực tập' });
         }
     };
-    static layBaoCao(req, res) {
-        BaoCao.find()
-            .then((baocao) => res.json(baocao))
-            .catch((err) => res.json('Lỗi /student: ' + err));
-    }
-    static BaoCao(req, res) {
-        const newData = req.body;
-        BaoCao.create(newData)
-            .then((result) => {
-                res.status(201).json(result);
-            })
-            .catch((err) => {
-                res.status(500).json({ error: err });
-            });
-    }
 }
 
 module.exports = SinhVienController;
