@@ -7,7 +7,27 @@
 ### SỬ DỤNG HOSTING RENDER.COM, LINK BACK-END: https://sistern-v1.onrender.com
 
   <pre>
-    ## Mô tả: Cần cài đặt các thư viên sau: <br>
+    ## TIẾN TRÌNH CÔNG VIỆC <br>
+    - Hoàn thành code xây dựng API xác thực người dùng <br>
+
+   - Hoàn thành code Xây dựng API lấy danh sách tin tức <br>
+
+   - Hoàn thành code Xây dựng API lấy danh sách, đăng ký đơn thực tập <br> 
+
+   - Hoàn thành code Xây dựng API thêm, cập nhật thông tin, trạng thái sinh viên <br>
+
+   - Hoàn thành code xây dựng API thêm, lấy thông tin báo cáo sinh viên <br>
+
+   - Hoàn thành code xây dựng API thêm, cập nhật thông tin đợt thực tập, công việc thực tập cho Admin <br>
+ 
+   - Hoàn thành code Xây dựng API thêm, cập nhật thông tin công ty <br>
+
+   - Hoàn thành code xây dựng API thêm, cập nhật thông tin cán bộ hướng dẫn <br>
+
+   - Hoàn thành code xây dựng API lấy danh sách công ty <br>
+   
+    - Hoàn thành Kiểm tra, fix bugs và tối ưu hóa hiệu suất trên toàn bộ API<br>
+     ## Mô tả: Cần cài đặt các thư viên sau: <br>
         "body-parser": "^1.20.2",<br>
         "cors": "^2.8.5",<br>
         "csvtojson": "^2.0.10",<br>
@@ -30,21 +50,3 @@
       Thư mục uploads chứa các file báo cáo của sinh viên nộp lên trong quá trình thực tập.<br>
       File index,js khi chạy dự án file index sẽ được tự động thực hiện. Chính vì thế, để sử dụng các thư viện đã cài đặt và các đường dẫn xử lý cần require và định nghĩa ở đây.
 <br>
-    Các hoạt động thực hiện: <br>
-    - Tạo cấu trúc thư mục. <br>
-    - Tạo Models cho sinh viên, giáo viên, công ty, cán bộ hướng dẫn, đơn thực tập, thông báo. <br>
-    - Tạo Controllers cho sinh viên, giáo viên, công ty, cán bộ hướng dẫn, đơn thực tập, thông báo. <br>
-    - Tạo routes, controller, models cho thông tin cán bộ, thông tin công ty, tin tức.<br>
-    - Tạo routes, controller, models cho giáo viên, công ty để lấy danhsachgiaovien, danhsachcongty.<br>
-    - Cập nhật phần back-end hệ thống.<br>
-    - Post đơn thực tập. <br>
-    - Thêm module cập nhật đơn thực tập (chức năng duyệt đơn).<br>
-    - Thêm controller và route để xử lý thêm tin tức.<br>
-    - Update để tạo demo.<br>
-    - Chỉnh sửa database lấy từ host và đưa back-end lên render.com<br>
-    - Cập nhật model-controller-router BaoCaos, chức năng thêm file báo cáo, chỉnh sửa model CongTys, Thuctaps.<br>
-    - Update chức năng của hệ thống.<br>
-    - update chức năng tải file báo cáo của sinh viên.<br>
-    - Fix lỗi đơn thực tập sinh viên.<br>
-    - Nâng cấp chức năng admin.<br>
-    - Cập nhật một số chức năng cho hướng phát triển sau này.<br>
