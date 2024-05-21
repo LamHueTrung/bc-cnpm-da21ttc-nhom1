@@ -22,4 +22,5 @@ Nguyễn Hoàng Nhựt - 110121255 - Member<br>
     Thiết kế giao diện danh sách công ty thực tập bằng figma - Hoàn thành <br>
     Thiết kế giao diện thêm công ty đăng ký chương trình thực tập - Hoàn thành <br>
     Hoàn thành code các giao diện còn lại của admin <br>
+    Tối ưu hóa trải nghiệm người dùng - Hoàn thành
   </pre>
